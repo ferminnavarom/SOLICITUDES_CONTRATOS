@@ -422,15 +422,15 @@
       <div class="grid-2">
         <div class="field">
           <label for="asunto">Asunto <span class="req">*</span></label>
-          <input type="text" id="asunto" name="asunto" required placeholder="Ej. Contrato de producción - sencillo">
+          <input type="text" id="asunto" name="asunto" required placeholder="Ej. Contrato de producción">
         </div>
         <div class="field">
           <label for="artistaProyecto">Artista / Proyecto <span class="req">*</span></label>
           <input type="text" id="artistaProyecto" name="artistaProyecto" required placeholder="Nombre del artista o proyecto">
         </div>
         <div class="field">
-          <label for="servicio">Servicio <span class="req">*</span></label>
-          <input type="text" id="servicio" name="servicio" required placeholder="Ej. Grabación, mezcla y masterización">
+          <label for="servicio">Servicio (audio o video) <span class="req">*</span></label>
+          <input type="text" id="servicio" name="servicio" required placeholder="Ej. Grabación, mezcla y/o masterización">
         </div>
         <div class="field">
           <label for="idiomaContrato">Idioma del contrato <span class="req">*</span></label>
@@ -472,6 +472,18 @@
             <button type="button" class="dynamic-row__remove" aria-label="Eliminar productor">×</button>
           </div>
           <button type="button" class="add-row-btn" data-target="productoresContainer" data-class="productor-input" data-placeholder="Nombre del productor">+ Agregar productor</button>
+        </div>
+      </div>
+
+     <div class="field field--full">
+        <label>Director(es)</label>
+        <div class="dynamic-list" id="directoresContainer">
+          <div class="dynamic-row">
+            <span class="dynamic-row__num">01</span>
+            <input type="text" class="director-input" placeholder="Nombre del director">
+            <button type="button" class="dynamic-row__remove" aria-label="Eliminar director">×</button>
+          </div>
+          <button type="button" class="add-row-btn" data-target="directoresContainer" data-class="director-input" data-placeholder="Nombre del director">+ Agregar director</button>
         </div>
       </div>
     </section>
