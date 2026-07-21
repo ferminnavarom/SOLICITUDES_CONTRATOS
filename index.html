@@ -64,7 +64,7 @@
   }
 
   .cover__logo{
-    width:180px;
+    width:300px;
     height:auto;
     flex-shrink:0;
     margin-bottom:.5rem;
@@ -429,7 +429,7 @@
           <input type="text" id="artistaProyecto" name="artistaProyecto" required placeholder="Nombre del artista o proyecto">
         </div>
         <div class="field">
-          <label for="servicio">Servicio (audio o video) <span class="req">*</span></label>
+          <label for="servicio">Servicio (audio, video o arte) <span class="req">*</span></label>
           <input type="text" id="servicio" name="servicio" required placeholder="Ej. Grabación, mezcla y/o masterización">
         </div>
         <div class="field">
@@ -486,6 +486,20 @@
           <button type="button" class="add-row-btn" data-target="directoresContainer" data-class="director-input" data-placeholder="Nombre del director">+ Agregar director</button>
         </div>
       </div>
+
+     <div class="field field--full">
+        <label>Diseñador(es)</label>
+        <div class="dynamic-list" id="diseñadoresContainer">
+          <div class="dynamic-row">
+            <span class="dynamic-row__num">01</span>
+            <input type="text" class="diseñador-input" placeholder="Nombre del diseñador">
+            <button type="button" class="dynamic-row__remove" aria-label="Eliminar diseñador">×</button>
+          </div>
+          <button type="button" class="add-row-btn" data-target="diseñadoresContainer" data-class="diseñador-input" data-placeholder="Nombre del diseñador">+ Agregar diseñador</button>
+        </div>
+      </div>
+
+    
     </section>
 
     <section class="form-section">
@@ -540,7 +554,7 @@
     <section class="form-section">
       <span class="form-section__tab">04 · DOC</span>
       <h2>Documentos</h2>
-      <p class="section-hint">Adjunta tu comprobante de domicilio en formato PDF (máximo 10MB).</p>
+      <p class="section-hint">Adjunta los siguientes documentos (máximo 10MB).</p>
 
       <div class="field field--full">
         <label>Comprobante de domicilio <span class="req">*</span></label>
@@ -551,11 +565,61 @@
         <div class="file-preview" id="filePreview" hidden></div>
         <input type="file" id="fileInput" accept="application/pdf" hidden>
       </div>
+      
+      <div class="field field--full">
+        <label>Identificación oficial<span class="req">*</span></label>
+        <div class="dropzone" id="dropzone">
+          <strong>Arrastra tu archivo aquí o haz clic para seleccionarlo</strong>
+          <span>Solo se acepta PDF · máximo 10MB</span>
+        </div>
+        <div class="file-preview" id="filePreview" hidden></div>
+        <input type="file" id="fileInput" accept="application/pdf" hidden>
+      </div>
+      
+      <div class="field field--full">
+        <label>Acta constitutiva (si aplica)<span class="req">*</span></label>
+        <div class="dropzone" id="dropzone">
+          <strong>Arrastra tu archivo aquí o haz clic para seleccionarlo</strong>
+          <span>Solo se acepta PDF · máximo 10MB</span>
+        </div>
+        <div class="file-preview" id="filePreview" hidden></div>
+        <input type="file" id="fileInput" accept="application/pdf" hidden>
+      </div>
+
+        <div class="field field--full">
+        <label>Poder representante legal (si aplica)<span class="req">*</span></label>
+        <div class="dropzone" id="dropzone">
+          <strong>Arrastra tu archivo aquí o haz clic para seleccionarlo</strong>
+          <span>Solo se acepta PDF · máximo 10MB</span>
+        </div>
+        <div class="file-preview" id="filePreview" hidden></div>
+        <input type="file" id="fileInput" accept="application/pdf" hidden>
+      </div>
+
+       <div class="field field--full">
+        <label>Especificaciones técnicas y/o entregables (audio, video, diseño)<span class="req">*</span></label>
+        <div class="dropzone" id="dropzone">
+          <strong>Arrastra tu archivo aquí o haz clic para seleccionarlo</strong>
+          <span>Solo se acepta PDF · máximo 10MB</span>
+        </div>
+        <div class="file-preview" id="filePreview" hidden></div>
+        <input type="file" id="fileInput" accept="application/pdf" hidden>
+      </div>
+
+       <div class="field field--full">
+        <label>Split editorial (si aplica)<span class="req">*</span></label>
+        <div class="dropzone" id="dropzone">
+          <strong>Arrastra tu archivo aquí o haz clic para seleccionarlo</strong>
+          <span>Solo se acepta PDF · máximo 10MB</span>
+        </div>
+        <div class="file-preview" id="filePreview" hidden></div>
+        <input type="file" id="fileInput" accept="application/pdf" hidden>
+      </div>    
     </section>
 
     <section class="submit-section">
       <h2>Enviar expediente</h2>
-      <p class="section-hint">Te enviaremos confirmación al correo indicado y podrás dar seguimiento con tu folio.</p>
+      <p class="section-hint">Podrás dar seguimiento con tu folio.</p>
 
       <div class="submit-row">
         <div class="field">
@@ -570,7 +634,7 @@
   </form>
 
   <footer>
-    Rico o Muertx · Este formulario es para uso interno de gestión de contratos
+    Rico o Muerto · Este formulario es para uso interno
   </footer>
 
 </div>
